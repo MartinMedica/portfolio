@@ -1,11 +1,66 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import Mail from "../components/icons/Mail.astro";
+import Suitcase from "../components/icons/Suitcase.astro";
+import Code from "../components/icons/Code.astro";
 ---
 
 <Layout>
-	<Welcome />
-</Layout>
+  <main class="px-4">
+    <SectionContainer class="pt-20 pb-20 md:pt-30">
+      <h1
+        class="flex flex-row flex-wrap items-center gap-x-4 pb-4 text-3xl font-bold md:text-4xl lg:text-5xl"
+      >
+        Martin Medica <a
+          href="https://www.linkedin.com/in/martinmedica/"
+          target="_blank"
+          rel="noopener"><Badge>Disponible para trabajar</Badge></a
+        >
+      </h1>
+      <h2 class="text-wrap">
+        +7 años de experiencia.<span class="text-yellow-200/90">
+          Desarrollador Web.</span
+        >
+        <span class="text-sky-200/90">Montevideo, Uruguay.</span>
+      </h2>
+      <ul class="mt-8 flex flex-wrap gap-x-4">
+        <li>
+          <SocialPill href="https://www.linkedin.com/in/martinmedica/">
+            <LinkedIn class="size-4 md:size-6" />
+            LinkedIn
+          </SocialPill>
+        </li>
+        <li>
+          <SocialPill href="https://www.linkedin.com/in/martinmedica/">
+            <GitHub class="size-4 md:size-6" />
+            GitHub
+          </SocialPill>
+        </li>
+        <li>
+          <SocialPill href="mailto:martinmedica@gmail.com">
+            <Mail class="size-4 md:size-6" />
+            martinmedica@gmail.com
+          </SocialPill>
+        </li>
+      </ul>
+    </SectionContainer>
+    <SectionContainer id="experiencia">
+      <h2 class="mb-6 flex items-center gap-x-3 text-2xl font-semibold">
+        <Suitcase class="size-8" /> Experiencia Laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+    <SectionContainer id="proyectos">
+      <h2 class="mb-6 flex items-center gap-x-3 text-2xl font-semibold">
+        <Code class="size-8" /> Proyectos
+      </h2>
+      <Experience />
+    </SectionContainer>
+  </main></Layout
+>

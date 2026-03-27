@@ -1,0 +1,27 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Junio 2021 – Septiembre 2025",
+    title: "MercadoLibre — Frontend Engineer (Frontend Core / Platform)",
+    description:
+      "Desarrollo y mantenimiento de un framework frontend basado en React, utilizado por más de 1.000 aplicaciones a nivel compañía, incluyendo tooling compartido y configuraciones base (Webpack, Babel, ESLint, Jest). Automatización de migraciones y upgrades a gran escala mediante codemods, e implementación de funcionalidades clave como SSR, routing basado en filesystem y arquitectura de Islands. Foco en mejorar la Developer Experience, reduciendo fricción y estandarizando prácticas entre equipos.",
+  },
+  {
+    date: "Junio 2019 – Junio 2021",
+    title: "Tata Consultancy Services — Software Developer",
+    description:
+      "Desarrollo de extensiones y plugins para pipelines de CI/CD, automatizando análisis de seguridad estática (SAST), cobertura de tests y control de quality gates. Desarrollo frontend con Vue.js, construcción de APIs REST con .NET e integración con bases de datos SQL.",
+  },
+];
+---
+
+<ol class="border-default relative border-s">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="ms-4 mb-10">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
