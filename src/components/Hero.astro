@@ -1,0 +1,43 @@
+---
+import Badge from "./Badge.astro";
+import SocialPill from "./SocialPill.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+import GitHub from "./icons/GitHub.astro";
+import Mail from "./icons/Mail.astro";
+---
+
+<h1
+  class="flex flex-row flex-wrap items-center gap-x-4 pb-4 text-3xl font-bold md:text-4xl lg:text-5xl"
+>
+  Martin Medica <a
+    href="https://www.linkedin.com/in/martinmedica/"
+    target="_blank"
+    rel="noopener"><Badge>Disponible para trabajar</Badge></a
+  >
+</h1>
+<h2 class="text-wrap">
+  +7 años de experiencia.<span class="text-yellow-200/90">
+    Desarrollador Web.</span
+  >
+  <span class="text-sky-200/90">Montevideo, Uruguay.</span>
+</h2>
+<ul class="mt-8 flex flex-wrap gap-x-4">
+  <li>
+    <SocialPill href="https://www.linkedin.com/in/martinmedica/">
+      <LinkedIn class="size-4 md:size-6" />
+      LinkedIn
+    </SocialPill>
+  </li>
+  <li>
+    <SocialPill href="https://www.linkedin.com/in/martinmedica/">
+      <GitHub class="size-4 md:size-6" />
+      GitHub
+    </SocialPill>
+  </li>
+  <li>
+    <SocialPill href="mailto:martinmedica@gmail.com">
+      <Mail class="size-4 md:size-6" />
+      martinmedica@gmail.com
+    </SocialPill>
+  </li>
+</ul>

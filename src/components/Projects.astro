@@ -1,0 +1,53 @@
+---
+import NextJs from "./icons/NextJs.astro";
+import Tailwind from "./icons/Tailwind.astro";
+
+const TAGS = {
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-white text-sky-500",
+    icon: Tailwind,
+  },
+  NEXT: {
+    name: "Next.Js",
+    class: "bg-black text-white",
+    icon: NextJs,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "Transcribe",
+    description:
+      "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    link: "https://www.transcribe.martinmedica.com",
+    image: "/projects/transcribe.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, link, image, tags }) => (
+    <article>
+      <h3 class="mb-2 text-2xl font-semibold text-yellow-200">{title}</h3>
+      <p class="mb-4 text-lg text-pretty">{description}</p>
+      <ul class="mb-4 flex flex-row gap-x-4">
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} px-1 py-2`}
+            >
+              <tag.icon class="size-4" /> {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-2xl shadow-white/10"
+        src={image}
+        alt="Captura de pantalla del proyecto"
+      />
+    </article>
+  ))
+}
