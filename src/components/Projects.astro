@@ -25,16 +25,56 @@ const PROJECTS = [
     image: "/projects/transcribe.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
+  {
+    title: "Transcribe",
+    description:
+      "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    link: "https://www.transcribe.martinmedica.com",
+    image: "/projects/transcribe.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Transcribe",
+    description:
+      "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    link: "https://www.transcribe.martinmedica.com",
+    image: "/projects/transcribe.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Transcribe",
+    description:
+      "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    link: "https://www.transcribe.martinmedica.com",
+    image: "/projects/transcribe.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Transcribe",
+    description:
+      "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    link: "https://www.transcribe.martinmedica.com",
+    image: "/projects/transcribe.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Transcribe",
+    description:
+      "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    link: "https://www.transcribe.martinmedica.com",
+    image: "/projects/transcribe.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
 ];
 ---
 
 <div class="flex flex-col gap-y-16">
   {
     PROJECTS.map(({ title, description, link, image, tags }) => (
-      <article class="flex flex-col gap-4 md:flex-row">
+      <article class="group flex flex-col gap-8 md:flex-row">
         <div class="w-full md:w-1/2">
           <img
-            class="rounded shadow-2xl shadow-white/10"
+            class="rounded shadow-2xl shadow-white/10 transition group-hover:scale-105"
             src={image}
             alt="Captura de pantalla del proyecto"
           />
