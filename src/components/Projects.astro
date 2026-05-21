@@ -16,11 +16,12 @@ const TAGS = {
   },
 };
 
+const { t } = Astro.props;
+
 const PROJECTS = [
   {
-    title: "Transcribe",
-    description:
-      "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    title: t("projects.transcribe.title"),
+    description: t("projects.transcribe.desc"),
     link: "https://www.transcribe.martinmedica.com",
     image: "/projects/transcribe.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],

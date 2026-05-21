@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../Hero.astro";
+import Experience from "../Experience.astro";
+import Projects from "../Projects.astro";
+import SectionContainer from "../SectionContainer.astro";
+import Suitcase from "../icons/Suitcase.astro";
+import Code from "../icons/Code.astro";
+import TitleSection from "../TitleSection.astro";
+
+const { t } = Astro.props;
+---
+
+<Layout>
+  <main class="px-4">
+    <SectionContainer class="pt-40 pb-40 md:pt-30">
+      <Hero t={t} />
+    </SectionContainer>
+    <SectionContainer class="pb-20" id={t("experience.id")}>
+      <TitleSection>
+        <Suitcase class="size-8" />{t("experience.title")}</TitleSection
+      >
+      <Experience t={t} />
+    </SectionContainer>
+    <SectionContainer class="pb-20" id={t("projects.id")}>
+      <TitleSection> <Code class="size-8" />{t("projects.title")}</TitleSection>
+      <Projects t={t} />
+    </SectionContainer>
+  </main></Layout
+>

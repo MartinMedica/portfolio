@@ -1,25 +1,29 @@
 ---
+import { getLangFromUrl, useTranslation } from "../i18n/utils";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
 import ArrowUp from "../components/icons/ArrowUp.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslation(lang);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>Portfolio Martín Médica - Desarrollador y Programador Web</title>
+    <title>{t("title")}</title>
   </head>
   <body id="top" class="bg-slate-900 text-white">
     <div
       class="absolute inset-0 z-[-2] bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] bg-[size:14px_24px]"
     >
     </div>
-    <Header />
+    <Header t={t} />
     <slot />
     <a
       href="#top"

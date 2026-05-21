@@ -4,6 +4,8 @@ import SocialPill from "./SocialPill.astro";
 import LinkedIn from "./icons/LinkedIn.astro";
 import GitHub from "./icons/GitHub.astro";
 import Mail from "./icons/Mail.astro";
+
+const { t } = Astro.props;
 ---
 
 <h1
@@ -12,13 +14,12 @@ import Mail from "./icons/Mail.astro";
   Martín Médica <a
     href="https://www.linkedin.com/in/martinmedica/"
     target="_blank"
-    rel="noopener"><Badge>Disponible para trabajar</Badge></a
+    rel="noopener"><Badge>{t("hero.available")}</Badge></a
   >
 </h1>
 <h2 class="text-wrap">
-  +7 años de experiencia.<span class="text-yellow-200/90">
-    Desarrollador Web.</span
-  >
+  {t("hero.exp")}
+  <span class="text-yellow-200/90">{t("hero.role")}</span>
   <span class="text-sky-200/90">Montevideo, Uruguay.</span>
 </h2>
 <ul class="mt-8 flex flex-wrap gap-x-4">

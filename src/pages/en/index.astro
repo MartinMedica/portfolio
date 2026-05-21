@@ -1,0 +1,9 @@
+---
+import { getLangFromUrl, useTranslation } from "../../i18n/utils";
+import HomePage from "../../components/pages/HomePage.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslation(lang);
+---
+
+<HomePage t={t} />
