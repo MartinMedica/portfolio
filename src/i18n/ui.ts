@@ -27,10 +27,13 @@ export const ui = {
     "experience.tata.desc":
       "Desarrollo de extensiones y plugins para pipelines de CI/CD, automatizando análisis de seguridad estática (SAST), cobertura de tests y control de quality gates. Desarrollo frontend con Vue.js, construcción de APIs REST con .NET e integración con bases de datos SQL.",
     "projects.id": "proyectos",
-    "projects.title": "Projectos",
+    "projects.title": "Proyectos",
     "projects.transcribe.title": "Transcribe",
     "projects.transcribe.desc":
       "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
+    "projects.shorten.title": "Shorten",
+    "projects.shorten.desc":
+      "Acortador de URLs construido con arquitectura serverless en AWS. Frontend estático en Astro servido desde CloudFront + S3, API con API Gateway y AWS Lambda, y persistencia en DynamoDB para redirecciones rápidas.",
   },
   en: {
     title: "Portfolio Martín Médica - Web Developer",
@@ -53,5 +56,8 @@ export const ui = {
     "projects.title": "Projects",
     "projects.transcribe.desc":
       "A web-based tool for transcribing music that allows you to control speed, create loops and markers, and analyze audio with waveform and EQ for greater precision.",
+    "projects.shorten.title": "Shorten",
+    "projects.shorten.desc":
+      "A URL shortener built using a serverless AWS architecture. Static Astro frontend served through CloudFront + S3, API powered by API Gateway and AWS Lambda, with DynamoDB for fast URL lookups and redirects.",
   },
 } as const;

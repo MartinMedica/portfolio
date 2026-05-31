@@ -1,6 +1,8 @@
 ---
 import NextJs from "./icons/NextJs.astro";
 import Tailwind from "./icons/Tailwind.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import AWS from "./icons/AWS.astro";
 import Link from "./icons/Link.astro";
 
 const TAGS = {
@@ -14,6 +16,16 @@ const TAGS = {
     class: "bg-black text-white",
     icon: NextJs,
   },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-red-400",
+    icon: AstroIcon,
+  },
+  AWS: {
+    name: "AWS",
+    class: "bg-black text-orange-400",
+    icon: AWS,
+  },
 };
 
 const { t } = Astro.props;
@@ -25,6 +37,13 @@ const PROJECTS = [
     link: "https://www.transcribe.martinmedica.com",
     image: "/projects/transcribe.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: t("projects.shorten.title"),
+    description: t("projects.shorten.desc"),
+    link: "https://shorten.martinmedica.com/",
+    image: "/projects/shorten.webp",
+    tags: [TAGS.ASTRO, TAGS.AWS],
   },
   // {
   //   title: "Tapir",
@@ -53,7 +72,7 @@ const PROJECTS = [
             {tags.map((tag) => (
               <li>
                 <span
-                  class={`flex gap-x-2 rounded-full text-xs ${tag.class} px-1 py-1`}
+                  class={`flex gap-x-2 rounded-full text-xs ${tag.class} px-2 py-1`}
                 >
                   <tag.icon class="size-4" /> {tag.name}
                 </span>
