@@ -21,7 +21,7 @@ export const ui = {
       "MercadoLibre — Frontend Engineer (Frontend Core / Platform)",
     "experience.ml.date": "Junio 2021 – Septiembre 2025",
     "experience.ml.desc":
-      "Desarrollo y mantenimiento de un framework frontend basado en React, utilizado por más de 1.000 aplicaciones a nivel compañía, incluyendo tooling compartido y configuraciones base (Webpack, Babel, ESLint, Jest). Automatización de migraciones y upgrades a gran escala mediante codemods, e implementación de funcionalidades clave como SSR, routing basado en filesystem y arquitectura de Islands. Foco en mejorar la Developer Experience, reduciendo fricción y estandarizando prácticas entre equipos.",
+      "Desarrollo y mantenimiento de un framework frontend basado en React, utilizado por más de 1.000 aplicaciones a nivel compañía, incluyendo tooling compartido y configuraciones base (Webpack, Babel, ESLint, Jest). Automatización de migraciones y upgrades a gran escala mediante codemods, e implementación de funcionalidades clave como Server Side Rendering (SSR), routing basado en filesystem y arquitectura de Islands. Foco en mejorar la Developer Experience, reduciendo fricción y estandarizando prácticas entre equipos.",
     "experience.tata.title": "Tata Consultancy Services — Software Developer",
     "experience.tata.date": "Junio 2019 – Junio 2021",
     "experience.tata.desc":
@@ -48,7 +48,7 @@ export const ui = {
     "experience.title": "Work Experience",
     "experience.ml.date": "June 2021 – September 2025",
     "experience.ml.desc":
-      "Development and maintenance of a React-based frontend framework used by over 1,000 applications across the company, including shared tooling and base configurations (Webpack, Babel, ESLint, Jest). Automation of large-scale migrations and upgrades using codemods, and implementation of key features such as Single Sign-On (SSR), filesystem-based routing, and Island architecture. Focus on improving the Developer Experience by reducing friction and standardizing practices across teams.",
+      "Development and maintenance of a React-based frontend framework used by over 1,000 applications across the company, including shared tooling and base configurations (Webpack, Babel, ESLint, Jest). Automation of large-scale migrations and upgrades using codemods, and implementation of key features such as Server Side Rendering (SSR), filesystem-based routing, and Island architecture. Focus on improving the Developer Experience by reducing friction and standardizing practices across teams.",
     "experience.tata.date": "June 2019 – June 2021",
     "experience.tata.desc":
       "Development of extensions and plugins for CI/CD pipelines, automating static security analysis (SAST), test coverage, and quality control gates. Frontend development with Vue.js, building REST APIs with .NET, and integration with SQL databases.",
