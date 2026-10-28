@@ -27,6 +27,9 @@ export const ui = {
       "Desarrollo de extensiones y plugins para pipelines de CI/CD, automatizando análisis de seguridad estática (SAST), cobertura de tests y control de quality gates. Desarrollo frontend con Vue.js, construcción de APIs REST con .NET e integración con bases de datos SQL.",
     "projects.id": "proyectos",
     "projects.title": "Proyectos",
+    "projects.browserAi.title": "Browser AI",
+    "projects.browserAi.desc":
+      "Demo de IA que convierte imágenes en descripciones con Transformers.js. Podés elegir una imagen de ejemplo o subir la tuya; el modelo genera el caption en tu dispositivo.",
     "projects.transcribe.title": "Transcribe",
     "projects.transcribe.desc":
       "Herramienta web para transcribir música que permite controlar la velocidad, crear loops y marcadores, y analizar el audio con waveform y EQ para trabajar con mayor precisión.",
@@ -52,6 +55,9 @@ export const ui = {
       "Development of extensions and plugins for CI/CD pipelines, automating static security analysis (SAST), test coverage, and quality control gates. Frontend development with Vue.js, building REST APIs with .NET, and integration with SQL databases.",
     "projects.id": "projects",
     "projects.title": "Projects",
+    "projects.browserAi.title": "Browser AI",
+    "projects.browserAi.desc":
+      "An AI demo that turns images into captions with Transformers.js. Choose a sample image or upload your own, and the model generates a caption on your device.",
     "projects.transcribe.desc":
       "A web-based tool for transcribing music that allows you to control speed, create loops and markers, and analyze audio with waveform and EQ for greater precision.",
     "projects.shorten.title": "Shorten",
