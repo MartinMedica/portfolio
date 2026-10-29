@@ -12,7 +12,7 @@ export const ui = {
     "header.experience": "Experiencia",
     "header.projects": "Proyectos",
     "hero.available": "Disponible para trabajar",
-    "hero.exp": "+7 años de experiencia.",
+    "hero.exp": "+6 años de experiencia.",
     "hero.role": "Desarrollador Web.",
     "experience.id": "experiencia",
     "experience.title": "Experiencia Laboral",
@@ -43,11 +43,12 @@ export const ui = {
     "header.experience": "Experience",
     "header.projects": "Projects",
     "hero.available": "Available to work",
-    "hero.exp": "+7 years of experience.",
+    "hero.exp": "+6 years of experience.",
     "hero.role": "Web Developer.",
     "experience.id": "experience",
     "experience.title": "Work Experience",
-    "experience.ml.title": "MercadoLibre - Frontend Engineer (Frontend Core / Platform)",
+    "experience.ml.title":
+      "MercadoLibre - Frontend Engineer (Frontend Core / Platform)",
     "experience.ml.date": "June 2021 – September 2025",
     "experience.ml.desc":
       "Development and maintenance of a React-based frontend framework used by over 1,000 applications across the company, including shared tooling and base configurations (Webpack, Babel, ESLint, Jest). Automation of large-scale migrations and upgrades using codemods, and implementation of key features such as Server Side Rendering (SSR), filesystem-based routing, and Island architecture. Focus on improving the Developer Experience by reducing friction and standardizing practices across teams.",
