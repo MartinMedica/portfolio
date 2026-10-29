@@ -3,7 +3,7 @@ export const languages = {
   en: "English",
 };
 
-export const defaultLang = "es";
+export const defaultLang = "en";
 
 export const ui = {
   es: {
@@ -47,9 +47,11 @@ export const ui = {
     "hero.role": "Web Developer.",
     "experience.id": "experience",
     "experience.title": "Work Experience",
+    "experience.ml.title": "MercadoLibre - Frontend Engineer (Frontend Core / Platform)",
     "experience.ml.date": "June 2021 – September 2025",
     "experience.ml.desc":
       "Development and maintenance of a React-based frontend framework used by over 1,000 applications across the company, including shared tooling and base configurations (Webpack, Babel, ESLint, Jest). Automation of large-scale migrations and upgrades using codemods, and implementation of key features such as Server Side Rendering (SSR), filesystem-based routing, and Island architecture. Focus on improving the Developer Experience by reducing friction and standardizing practices across teams.",
+    "experience.tata.title": "Tata Consultancy Services - Software Developer",
     "experience.tata.date": "June 2019 – June 2021",
     "experience.tata.desc":
       "Development of extensions and plugins for CI/CD pipelines, automating static security analysis (SAST), test coverage, and quality control gates. Frontend development with Vue.js, building REST APIs with .NET, and integration with SQL databases.",
@@ -58,6 +60,7 @@ export const ui = {
     "projects.browserAi.title": "Browser AI",
     "projects.browserAi.desc":
       "An AI demo that turns images into captions with Transformers.js. Choose a sample image or upload your own, and the model generates a caption on your device.",
+    "projects.transcribe.title": "Transcribe",
     "projects.transcribe.desc":
       "A web-based tool for transcribing music that allows you to control speed, create loops and markers, and analyze audio with waveform and EQ for greater precision.",
     "projects.shorten.title": "Shorten",
