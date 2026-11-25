@@ -1,6 +1,4 @@
 ---
-import NextJs from "./icons/NextJs.astro";
-import Tailwind from "./icons/Tailwind.astro";
 import AstroIcon from "./icons/AstroIcon.astro";
 import AWS from "./icons/AWS.astro";
 import Link from "./icons/Link.astro";
@@ -8,17 +6,13 @@ import React from "./icons/React.astro";
 import TypeScript from "./icons/TypeScript.astro";
 import HuggingFace from "./icons/HuggingFace.astro";
 import GitHub from "./icons/GitHub.astro";
+import Sanity from "./icons/Sanity.astro";
 
 const TAGS = {
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-white text-sky-500",
-    icon: Tailwind,
-  },
-  NEXT: {
-    name: "Next.Js",
-    class: "bg-black text-white",
-    icon: NextJs,
+  SANITY: {
+    name: "Sanity",
+    class: "bg-red-950 text-red-200",
+    icon: Sanity,
   },
   ASTRO: {
     name: "Astro",
@@ -51,6 +45,13 @@ const { t } = Astro.props;
 
 const PROJECTS = [
   {
+    title: t("projects.danira.title"),
+    description: t("projects.danira.desc"),
+    link: "https://danira3.com/",
+    screenshot: "/projects/danira.webp",
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.SANITY],
+  },
+  {
     title: t("projects.browserAi.title"),
     description: t("projects.browserAi.desc"),
     link: "https://browser-ai.martinmedica.com/",
@@ -59,26 +60,12 @@ const PROJECTS = [
     tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TRANSFORMERS],
   },
   {
-    title: t("projects.transcribe.title"),
-    description: t("projects.transcribe.desc"),
-    link: "https://www.transcribe.martinmedica.com",
-    screenshot: "/projects/transcribe.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
     title: t("projects.shorten.title"),
     description: t("projects.shorten.desc"),
     link: "https://shorten.martinmedica.com/",
     screenshot: "/projects/shorten.webp",
     tags: [TAGS.ASTRO, TAGS.AWS],
   },
-  // {
-  //   title: "Tapir",
-  //   description: "Tienda de Arte",
-  //   link: "https://www.tapir.uy",
-  //   screenshot: "/projects/tapir.webp",
-  //   tags: [TAGS.NEXT, TAGS.TAILWIND],
-  // },
 ];
 ---
 
@@ -90,12 +77,15 @@ const PROJECTS = [
           <img
             class="rounded shadow-2xl shadow-white/10 transition group-hover:scale-105"
             src={screenshot}
-            alt="Captura de pantalla del proyecto"
+            alt={`${t("projects.screenshot")} ${title}`}
+            loading="lazy"
+            width="1920"
+            height="1080"
           />
         </div>
         <div class="w-full md:w-1/2 md:max-w-lg">
           <h3 class="mb-2 text-2xl font-semibold text-yellow-200">{title}</h3>
-          <ul class="mb-4 flex flex-row gap-x-4">
+          <ul class="mb-4 flex flex-row flex-wrap gap-2">
             {tags.map((tag) => (
               <li>
                 <span
@@ -115,7 +105,7 @@ const PROJECTS = [
               rel="noopener noreferrer"
             >
               <Link />
-              Preview
+              {t("projects.preview")}
             </a>
             {github && (
               <a

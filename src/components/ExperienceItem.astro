@@ -3,8 +3,9 @@ export interface Props {
   title: string;
   description: string;
   date: string;
+  contributions?: string[];
 }
-const { date, title, description } = Astro.props;
+const { date, title, description, contributions } = Astro.props;
 ---
 
 <div
@@ -14,3 +15,13 @@ const { date, title, description } = Astro.props;
 <time class="text-sm leading-none font-normal text-sky-200/90">{date}</time>
 <h3 class="my-2 text-lg font-semibold text-yellow-200/90">{title}</h3>
 <p class="font-normal text-pretty text-white/85">{description}</p>
+
+{
+  contributions && (
+    <ul class="mt-3 list-disc space-y-2 pl-5 text-white/85">
+      {contributions.map((contribution) => (
+        <li>{contribution}</li>
+      ))}
+    </ul>
+  )
+}
